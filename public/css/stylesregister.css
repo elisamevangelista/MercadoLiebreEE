@@ -1,0 +1,31 @@
+.banner {
+    display: none;
+}
+
+.camporegister {
+    text-align: center;
+    padding: 20px 5px;
+}
+
+.casilla{
+    padding: 10px 5px;
+    border: none;
+    width: 60%;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.titulo1{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.opciones{
+    justify-content: space-between;
+}
+
+.categoria{
+    
+}

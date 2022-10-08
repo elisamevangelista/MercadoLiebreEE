@@ -1,0 +1,28 @@
+.banner {
+    display: none;
+}
+
+.campologin {
+    text-align: center;
+    padding: 20px 5px;
+}
+.casilla{
+    padding: 10px 5px;
+    border: none;
+    width: 60%;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.boton{
+    text-align: center;
+    padding: 20px 5px 40px 5px;
+}
+button {
+    background-color: #1259c3;
+    font-size: 14px;
+    padding: 10px 5px;
+    width: 60%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
