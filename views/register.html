@@ -17,7 +17,7 @@
         <div class="headeradec1">
             <div class="headeradec">
                 <div class="logo">
-                 <img src="/images/logo-mercado-liebre.svg" alt="logo">
+                <a href="home"><img src="/images/logo-mercado-liebre.svg" alt="logo"></a>
                 </div>
                 <div class="buscador">
                 <div class="barra">Buscar productos, marcas </div>
@@ -36,8 +36,8 @@
     <p> </p>
     <p> </p>
     <ul class="grupo2">
-        <li><a href="register.html">Creá tu cuenta <i class="fa-regular fa-id-card"></i> </a></li>
-        <li><a href="login.html">Ingresá <i class="fa-solid fa-right-to-bracket"></i> </a></li>
+        <li><a href="register">Creá tu cuenta <i class="fa-regular fa-id-card"></i> </a></li>
+        <li><a href="login">Ingresá <i class="fa-solid fa-right-to-bracket"></i> </a></li>
         <li><a href="Mis Compras.html">Mis Compras <i class="fa-solid fa-basket-shopping"></i> </a></li>
     </ul>
     </div>
@@ -48,11 +48,10 @@
         <img src="/images/img-home-banner.jpg" alt="banner">
     </div>
    </header>
-    <form action="/registro-usuario" method="POST">
+    <form action=/registro-usuario method="POST">
         <div class="camporegister">
             <label></label>
             <input type="text" name="nombreyapellido" placeholder="Nombre y apellido" class="casilla">
-        </div>
         <div class="camporegister">
             <label></label>
             <input type="text" name="nombredeusuario" placeholder="Nombre de usario" class="casilla"> 
@@ -62,7 +61,8 @@
             <input type="email" name="email" placeholder="E-mail" class="casilla">
         </div>
         <div class="camporegister">
-            <label class="titulo1">Fecha de nacimiento</label>
+            <div class="titulo1">
+            <label>Fecha de nacimiento</label></div>
             <div>
             <input type="date" name="fechadenacimiento" placeholder="mm/dd/yyyy" class="casilla">
             </div>
@@ -72,25 +72,33 @@
             <input type="text" name="domicilio" placeholder="Domicilio" class="casilla">
         </div>
         <div class="camporegister">
-            <label class="titulo1">Perfil del usuario</label>
+            <div class="titulo1">
+            <label>Perfil del usuario</label></div>
             <div class="opciones">
-                <input type="radio"> Comprador
-           
-                <input type="radio"> Vendedor        
+                <div class="comprador">
+                <input type="radio" class="boton1"> Comprador
+                </div>
+                <div class="vendedor">
+                <input type="radio" class="boton1"> Vendedor        
+                </div>                
             </div>
         </div>
         <div class="camporegister">
-            <label class="titulo1">Intereses</label>
-            <div> <label class="categoria">Electro<input type="checkbox" name="categoria" value="electro"></label> </div>
-            <div> <label class="categoria">Moda<input type="checkbox" name="categoria" value="moda"></label></div>
-            <div> <label class="categoria">Hogar<input type="checkbox" name="categoria" value="hogar"></label></div>
-            <div> <label class="categoria">Juguetería<input type="checkbox" name="categoria" value="jugueteria"></label></div>
-            <div> <label class="categoria">Vida Sana<input type="checkbox" name="categoria" value="vidasana"></label></div>
+            <div class="titulo1">
+            <label>Intereses</label></div>
+            <div class="categoria"><label><input type="checkbox" name="categoria" value="electro" class="boton2">Electro</label> </div>
+            <div class="categoria"><label><input type="checkbox" name="categoria" value="moda" class="boton2">Moda</label></div>
+            <div class="categoria"><label><input type="checkbox" name="categoria" value="moda" class="boton2">Moda</label></div>
+            <div class="categoria"><label><input type="checkbox" name="categoria" value="hogar" class="boton2">Hogar</label></div>
+            <div class="categoria"><label><input type="checkbox" name="categoria" value="jugueteria" class="boton2">Juguetería</label></div>
+            <div class="categoria"><label><input type="checkbox" name="categoria" value="vidasana" class="boton2">Vida Sana</label></div>
             </div>
         </div>
         <div class="camporegister">
-            <label>Foto de usuario</label>
-            <input type="file" name="foto" accept=".jpg">
+            <div class="titulo1">
+            <label>Foto de usuario</label></div>
+            <div class="categoria">
+            <input type="file" name="foto" accept=".jpg" class="boton1"></div>
         </div>
         <div class="camporegister">
             <label></label>
@@ -100,8 +108,10 @@
             <label></label>
             <input type="password" name="confirmarcontraseña" placeholder="Confirmar contraseña" class="casilla">
         </div>
-        <button type="submit">Enviar</button> <!--debe llevar al home-->
+        <div class="boton">
+        <button type="submit">Enviar<a href="home.html"></a></button> <!--debe llevar al home-->
         <button type="reset">Borrar</button>  <!--borrara los datos del formulario-->
+        </div>
     </form>
     <footer>
         <div class="iconfooter"><i class="fa-sharp fa-solid fa-credit-card"></i></div>
